@@ -1,0 +1,61 @@
+:root {
+    --brand-green: #00856F;
+    --brand-green-light: #DCE9E2;
+    --brand-green-light-02: #F7F9F9;
+    --brand-beige: #FFFAF1;
+    --brand-green-hover: #00453A;
+ 
+    --gray-headline: #061800;
+    --gray-paragraph: #384633;
+    --white: #3E3E3E;
+ }
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    margin: 0;
+    width: 10rem;
+}
+
+.footerContainer {
+    background-color: #00856F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 120px;
+}
+
+.leftFooterInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.leftFooterInfoContainer > img {
+    width: 18rem;
+}
+
+.doctorYear {
+    color: #FFFAF1;
+    font-size: 1.1rem;
+}
+
+.todosPara {
+    color: #FFFAF1;
+    font-size: 1.1rem;
+}
+
+.logoLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}

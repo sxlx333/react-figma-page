@@ -1,0 +1,93 @@
+:root {
+   --brand-green: #00856F;
+   --brand-green-light: #DCE9E2;
+   --brand-green-light-02: #F7F9F9;
+   --brand-beige: #FFFAF1;
+   --brand-green-hover: #00453A;
+
+   --gray-headline: #061800;
+   --gray-paragraph: #384633;
+   --white: #3E3E3E;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.headerContainer {
+    background-color: #00856F;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.title {
+    margin: 0;
+    width: 10rem;
+}
+
+
+.navigationMenu > ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigationMenu ul li {
+    margin: 0 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.navigationMenu ul li a {
+    text-decoration: none;
+    color: #cbcccc;
+    padding: 10px;
+    display: block;
+    position: relative;
+    font-size: 1.2rem;
+}
+.navigationMenu ul li a.active {
+    color: #fff;
+    border-bottom: none;
+    font-weight: bold;
+}
+.navigationMenu ul li a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* This positions the border at the bottom of the header */
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.headerButton {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    font-weight: 400;
+}
+.headerButton:hover {
+    background-color: #016352;
+    color: #fff;
+    border: 1px solid #fff;
+}

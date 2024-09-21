@@ -1,0 +1,344 @@
+:root {
+    --brand-green: #00856F;
+    --brand-green-light: #DCE9E2;
+    --brand-green-light-02: #F7F9F9;
+    --brand-beige: #FFFAF1;
+    --brand-green-hover: #00453A;
+
+    --gray-headline: #061800;
+    --gray-paragraph: #384633;
+    --white: #3E3E3E;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 30px;
+    width: 100vw;
+    padding: 0;
+}
+
+.firstSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #DCE9E2;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 45px;
+    gap: 160px;
+}
+
+/* Styling for the text content */
+.boasTextContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 50%;
+    gap: 31px;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    /* margin-right: 159px; */
+}
+
+.imgContainer img {
+    /* max-width: 100%; 
+    height: auto; */
+    width: 550px;
+    height: auto;
+}
+
+.miniText {
+    color: #00856F;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.assistenciaTitle{
+    color: #212529;
+    font-size: 3.5rem;
+    line-height: 5rem;
+    margin: 0;
+}
+
+.paragraphText{
+    color: #495057;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.consultaButton{
+    background-color: #00856F;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 40px;
+    border: 1px solid  #00856F;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding-left: 64px;
+        position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.consultaButton:hover{
+    background-color: #015346;
+    color: #fff;
+    border: 1px solid  #00856F;
+}
+.consultaButton::before{
+    content: '';
+    position: absolute;
+    left: 25px; /* Adjust the position to fit your design */
+    width: 20px;
+    height: 20px;
+    background-image: url('../../assets/whatsapplogo.png'); /* Link to the image */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/*******************COLUMN CONTAINER********************/
+
+.columnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFAF1;
+    width: 83%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 130px;
+    border: 1px solid #DCE9E2;
+    height: 260px;
+    gap: 0;
+}
+
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-width: 150px; 
+}
+
+.columnMiddle {
+    border-left: 1px solid #00856F; 
+    border-right: 1px solid #00856F; 
+    min-height: 50px; 
+}
+
+
+.numbers{
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+.miniDesc{
+    color: #00856F;
+    font-size: 1.3rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .firstSection {
+        gap: 80px;
+    }
+    
+    .columnContainer {
+        width: 100%;
+        height: auto; /* Allow flexible height */
+    }
+}
+
+
+
+/*******************SERVICOS CONTAINER********************/
+
+.servicosContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F9F9;
+    padding: 150px 0px;
+}
+.paraServicos {
+    font-size: 1.1rem;
+    color: #00856F;
+    font-weight: bold;
+}
+.titleComo {
+    text-align: center;
+    font-size: 3.1rem;
+}
+.columnAndRowsContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.rowsContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+.row {
+    background-color: #FFFFFF;
+}
+.row > img {
+
+}
+
+.titleForSixColumns { 
+    font-size: 1.8rem;
+    color: #212529;
+}
+
+.paragraphForSixColumns {
+    font-size: 1.3rem;
+    color: #495057;
+}
+
+
+/*******************SOBRE NOS ESTENDA CONTAINER********************/
+
+.sobreNosContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 5rem;
+    background-color: #FFFAF1;
+    padding: 150px 0px 150px 0px;
+}
+.doctorImageContainer {
+
+}
+
+.rightSideContent {
+
+}
+
+.sobreNosPara {
+    color: #00856F;
+    font-size: 1.1rem;
+}
+
+.estendaTitle {
+    font-size: 2.5rem;
+}
+
+.longTextAmet {
+    font-size: 1.1rem;
+}
+
+/*******************CONTATO CONTAINER********************/
+
+.contatoContainer {
+    background-color: #FFFFFF;
+    padding: 150px 0px 150px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 262px;
+}
+
+.contactContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.entreEmContato {
+    font-size: 2.5rem;
+}
+
+.addressInfo {
+    margin: 0;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addressInfo::before {
+    content: '';
+    position: absolute;
+    left: 1px; 
+    width: 20px;
+    height: 20px;
+    background-image: url('../../assets/mapIcon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.emailInfo {
+    margin: 0;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailInfo::before {
+    content: '';
+    position: absolute;
+    left: 1px; 
+    width: 20px;
+    height: 20px;
+    background-image: url('../../assets/mailIcon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.rightSideImage {
+
+}
+
+
+
+
+/* .consultaButton::before{
+    content: '';
+    position: absolute;
+    left: 25px; 
+    width: 20px;
+    height: 20px;
+    background-image: url('../../assets/whatsapplogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+import mapIcon from '../../assets/mapIcon.png';
+import mailIcon from '../../assets/mailIcon.png'; */
