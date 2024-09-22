@@ -16,8 +16,8 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
+body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 
@@ -70,4 +70,34 @@ body {
 .logoLinks > a > img{
     width: 30px;
     height: auto;
+}
+
+
+@media (max-width: 915px) {
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        padding: 100px 37px;
+    }
+    .leftFooterInfoContainer {
+        padding: 0;
+    }
+    .leftFooterInfoContainer > img {
+        width: 27rem;
+    }
+    .doctorYear {
+        font-size: 32px;
+    }
+    .todosPara {
+        font-size: 32px;
+    }
+    .logoLinks > a > img {
+        width: 50px;
+    }
+    .logoLinks {
+        gap: 64px;
+    }
 }

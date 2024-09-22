@@ -16,8 +16,8 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
+body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 
@@ -37,7 +37,8 @@ main {
     padding: 20px;
     position: relative;
     padding-bottom: 45px;
-    gap: 40px
+    gap: 40px;
+    margin-top: -7px;
 }
 
 /* Styling for the text content */
@@ -238,9 +239,7 @@ main {
     background-color: #FFFAF1;
     padding: 150px 0px 150px 0px;
 }
-.doctorImageContainer {
 
-}
 .doctorImageContainer > img {
     border-style: none;
     width: 562px;
@@ -349,99 +348,260 @@ main {
 
 
 @media (max-width: 1560px) {
-    /* .imgContainer{
-        width: 488px;
-        height: auto;
-    } */
     .firstSection {
         gap: 0;
+        margin-top: 34px;
+    }
+    .boasTextContent {
+        max-width: 34%;
+        margin-bottom: 0;
+        padding-bottom: 154px;
+        margin-top: 74px;
+    }
+    .assistenciaTitle {
+        font-size: 27px;
+        line-height: 3rem;
+    }
+    .miniText {
+        font-size: 18px;
+    }
+    .paragraphText {
+        font-size: 18px;
+    }
+    .consultaButton {
+        padding: 17px 35px;
+        font-size: 1.3rem;
+        padding-left: 64px;
+    }
+    .columnContainer {
+        width: 79%;
+        bottom: calc(100% - 49rem);
     }
 }
 
+@media (max-width: 1450px) {
+    .sobreNosContainer {
+        gap: 40px;
+    }
+    .doctorImageContainer > img {
+        width: 332px;
+        height: auto;
+    }
+    .estendaTitle {
+        font-size: 33px;
+    }
+    .longTextAmet {
+        font-size: 12px;
+        color: #616161;
+        line-height: 2;
+    }
 
+
+    .titleForSixColumns {
+        font-size: 26px;
+    }
+    .paragraphForSixColumns {
+        font-size: 13px;
+    }
+
+
+    .rightSideImage > img {
+        max-width: 100%;
+        height: auto;
+    }
+    .contatoContainer {
+        gap: 50px;
+    }
+    .leftSideButtonNearPhoneImage {
+        margin-top: 20px;
+    }
+    .entreEmContato {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .addressInfo {
+        font-size: 18px;
+    }
+    .emailInfo {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .columnContainer {
+        width: 79%;
+        bottom: calc(100% - 57rem);
+}
+}
 
 @media (max-width: 915px) {
+    main {
+        width: 100%; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+    }
     .firstSection {
         flex-direction: column;
         align-items: center;
-        padding: 20px 10px; /* Adjust padding for mobile */
+        padding: 99px 10px;
     }
 
     .boasTextContent {
-        max-width: 100%; /* Allow text to take full width */
-        align-items: center; /* Center align for mobile */
-        text-align: center; /* Center text for better readability */
+        max-width: 100%;
+        align-items: center; 
+        text-align: center;
         margin-top: 75px;
+        height: auto;
+        gap: 68px;
     }
 
     .imgContainer {
-        max-width: 100%; /* Allow image to take full width */
-        margin: 20px 0; /* Add spacing around the image */
+        max-width: 100%;
+        margin: 20px 0; 
     }
 
     .imgContainer img {
-        width: 100%; /* Make image responsive */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 100%; 
+        height: auto;
+        margin-top: -77px;
     }
 
     .columnContainer {
-        flex-direction: column; /* Stack columns vertically */
-        width: 100%; /* Full width on mobile */
-        border: none; /* Remove borders for mobile */
-        gap: 20px; /* Spacing between items */
+        flex-direction: column; 
+        border: none;
+        gap: 20px; 
+        bottom: calc(100% - 126rem);
+        width: 91%;
+        height: 558px;
+        margin: 0 auto; 
+        max-width: 100%; 
     }
-
     .columns {
-        min-width: 100%; /* Ensure columns take full width */
-        text-align: center; /* Center text */
+        min-width: 100%; 
+        text-align: center; 
     }
 
     .servicosContainer {
-        padding: 100px 20px; /* Adjust padding for mobile */
+        padding: 408px 0px 190px 0px;
     }
 
+    .sobreNosPara {
+        font-size: 24px;
+    }
+    .estendaTitle {
+        font-size: 53px;
+    }
+    .longTextAmet {
+        font-size: 26px;
+    }
+    .rightSideContent {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        order: 1;
+    }
+
+    .longTextAmet > br {
+        display: none;
+    }
     .titleComo {
-        font-size: 2rem; /* Smaller title size */
+        font-size: 60px;
+    }
+    .doctorImageContainer {
+        order: 2;
     }
 
     .rowsContent {
-        flex-direction: column; /* Stack rows vertically */
-        gap: 30px; /* Spacing between items */
+        flex-direction: column;
+        gap: 30px; 
     }
 
     .row {
-        padding: 15px; /* Reduce padding */
-        width: 100%; /* Ensure full width */
+        padding: 40px;
+        width: max-content;
+    }
+
+    .row > img {
+        width: 40px;
+    }
+    .titleForSixColumns {
+        font-size: 40px;
+    }
+    .paragraphForSixColumns {
+        font-size: 24px;
+        margin: 30px 0px 0px 0px;
     }
 
     .sobreNosContainer {
-        flex-direction: column; /* Stack content vertically */
-        gap: 50px; /* Spacing between elements */
-        padding: 100px 20px; /* Adjust padding */
+        flex-direction: column;
+        gap: 95px;
+        padding: 100px 20px;
     }
 
     .doctorImageContainer img {
-        width: 100%; /* Make image responsive */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 100%;
+        height: auto;
+        width: auto;
     }
 
     .contatoContainer {
-        flex-direction: column; /* Stack contact elements */
-        gap: 50px; /* Spacing between elements */
-        padding: 50px 20px; /* Adjust padding */
+        flex-direction: column;
+        gap: 50px; 
+        padding: 50px 20px;
+        margin-top: 201px;
     }
 
     .rightSideImage img {
-        width: 100%; /* Make image responsive */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 100%; 
+        height: auto;
+        width: auto;
+        margin-bottom: 70px;
     }
 
     .addressInfo,
     .emailInfo {
-        font-size: 16px; /* Smaller font size for mobile */
+        font-size: 34px;
     }
 
     .entreEmContato {
-        font-size: 32px; /* Smaller title size */
+        font-size: 68px;
+    }
+    .assistenciaTitle {
+        font-size: 62px;
+        line-height: normal;
+    }
+    .paragraphText {
+        font-size: 34px;
+    }
+    .consultaButton {
+        font-size: 40px;
+    }
+    .miniText {
+        font-size: 23px;
+    }
+    .columnMiddle {
+        border: none;
+    }
+    .paraServicos {
+        font-size: 32px;
+    }
+    .columnAndRowsContainer {
+        width: 100%;
+        gap: 37px;
     }
 }
+@media (max-width: 700px) {
+    .columnContainer {
+        bottom: calc(100% - 126rem);
+        width: 91%;
+        height: 558px;
+    }
+ }
+ @media (max-width: 660px) {
+    .columnContainer {
+        bottom: calc(100% - 126rem);
+        width: 91%;
+        height: 558px;
+    }
+ }
+

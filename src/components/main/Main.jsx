@@ -85,7 +85,7 @@ export const Main = () => {
             {/***********************CONTAINER SOBRE NOS ESTENDA******************** */}
 
             <div className={style.sobreNosContainer}>
-                <div className='doctorImageContainer'>
+                <div className={style.doctorImageContainer}>
                     <img src={doctorImage} alt="picture of doctor and patients" />
                 </div>
                 <div className={style.rightSideContent}>
