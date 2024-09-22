@@ -16,9 +16,9 @@
      box-sizing: border-box;
  }
  
- body {
-     overflow-x: hidden;
- }
+ body, html {
+    overflow-x: hidden; 
+}
  
  .headerContainer {
      background-color: #00856F;
@@ -80,18 +80,18 @@
  }
  
  .hamburgerMenu {
-     display: none; /* Initially hidden for desktop */
+     display: none; 
      background: none;
      border: none;
      cursor: pointer;
  }
  
  .logoLinks {
-     display: none; /* Initially hidden */
+     display: none; 
  }
  
  .logoLinks > a > img {
-     width: 30px; /* Adjust the size of your icons */
+     width: 30px; 
  }
  .mobileMenuButton {
     display: none;
@@ -104,7 +104,7 @@
      }
      
      .navigationMenu {
-         display: none; /* Hidden by default */
+         display: none; 
          flex-direction: column;
          align-items: center;
          position: fixed;
@@ -117,13 +117,12 @@
      }
  
      .hamburgerMenu {
-         display: block; /* Show hamburger menu on mobile */
+         display: block; 
      }
  
-     /* Mobile menu when opened */
      .menuOpen {
-         display: flex; /* Show the menu when open */
-         margin-top: 35px;
+         display: flex; 
+         margin-top: 16px;
      }
  
      .menuOpen ul {
@@ -160,4 +159,6 @@
          margin-top: 20px;
      }
  }
+
+
  
