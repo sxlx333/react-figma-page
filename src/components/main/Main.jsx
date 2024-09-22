@@ -103,7 +103,7 @@ export const Main = () => {
                     <h2 className={style.entreEmContato}>Entre em contato <br /> com a gente!</h2>
                     <p className={style.addressInfo}>R. Amauri Souza, 346</p>
                     <p className={style.emailInfo}>contato@doctorcare.com</p>
-                    <button className={style.consultaButton}>Agende sua consulta</button>
+                    <button className={`${style.consultaButton} ${style.leftSideButtonNearPhoneImage}`}>Agende sua consulta</button>
                 </div>
                 <div className={style.rightSideImage}>
                     <img src={personWithPhoneImage} alt="person with phone" />

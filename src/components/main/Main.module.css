@@ -16,7 +16,13 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+
 main {
+    position: relative; /* This ensures the absolute positioning of children stays within this context */
     margin-top: 30px;
     width: 100vw;
     padding: 0;
@@ -31,7 +37,7 @@ main {
     padding: 20px;
     position: relative;
     padding-bottom: 45px;
-    gap: 160px;
+    gap: 40px
 }
 
 /* Styling for the text content */
@@ -41,8 +47,10 @@ main {
     justify-content: center;
     align-items: flex-start;
     max-width: 50%;
-    gap: 31px;
+    gap: 21px;
+    margin-bottom: 87px;
 }
+
 
 .imgContainer {
     display: flex;
@@ -61,33 +69,33 @@ main {
 
 .miniText {
     color: #00856F;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .assistenciaTitle{
     color: #212529;
-    font-size: 3.5rem;
+    font-size: 60px;
     line-height: 5rem;
     margin: 0;
 }
 
 .paragraphText{
     color: #495057;
-    font-size: 1.1rem;
+    font-size: 21px;
     margin: 0;
 }
 
 .consultaButton{
     background-color: #00856F;
     color: #fff;
-    padding: 16px 32px;
+    padding: 20px 55px;
     border-radius: 40px;
     border: 1px solid  #00856F;
     font-size: 1.3rem;
     cursor: pointer;
     padding-left: 64px;
-        position: relative;
+    position: relative;
     display: inline-flex;
     align-items: center;
 }
@@ -116,14 +124,15 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #FFFAF1;
-    width: 83%;
-    position: relative;
+    width: 78%;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 130px;
+    bottom: calc(100% - 56rem);
     border: 1px solid #DCE9E2;
     height: 260px;
     gap: 0;
+    z-index: 1;
 }
 
 
@@ -156,19 +165,6 @@ main {
 
 
 
-@media (max-width: 768px) {
-    .firstSection {
-        gap: 80px;
-    }
-    
-    .columnContainer {
-        width: 100%;
-        height: auto; /* Allow flexible height */
-    }
-}
-
-
-
 /*******************SERVICOS CONTAINER********************/
 
 .servicosContainer {
@@ -177,16 +173,19 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #F7F9F9;
-    padding: 150px 0px;
+    padding: 269px 0px 181px 0px;
+    gap: 10px;
 }
 .paraServicos {
     font-size: 1.1rem;
     color: #00856F;
-    font-weight: bold;
+    font-weight: 500;
 }
 .titleComo {
     text-align: center;
     font-size: 3.1rem;
+    font-weight: 600;
+    margin: 0px 0px 100px 0px;
 }
 .columnAndRowsContainer {
     width: 80%;
@@ -207,9 +206,13 @@ main {
 }
 .row {
     background-color: #FFFFFF;
+    border: 1px solid #DCE9E2;
+    padding: 24px;
 }
 .row > img {
-
+    border-style: none;
+    width: 31px;
+    height: auto;
 }
 
 .titleForSixColumns { 
@@ -218,7 +221,7 @@ main {
 }
 
 .paragraphForSixColumns {
-    font-size: 1.3rem;
+    font-size: 20px;
     color: #495057;
 }
 
@@ -231,12 +234,17 @@ main {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    gap: 5rem;
+    gap: 100px;
     background-color: #FFFAF1;
     padding: 150px 0px 150px 0px;
 }
 .doctorImageContainer {
 
+}
+.doctorImageContainer > img {
+    border-style: none;
+    width: 562px;
+    height: auto;
 }
 
 .rightSideContent {
@@ -246,14 +254,17 @@ main {
 .sobreNosPara {
     color: #00856F;
     font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .estendaTitle {
-    font-size: 2.5rem;
+    font-size: 44px;
 }
 
 .longTextAmet {
     font-size: 1.1rem;
+    color: #616161;
+    line-height: 30px;
 }
 
 /*******************CONTATO CONTAINER********************/
@@ -273,26 +284,33 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 30px;
+    gap: 10px;
 }
 
 .entreEmContato {
-    font-size: 2.5rem;
+    font-size: 51px;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
+.leftSideButtonNearPhoneImage {
+    margin-top: 47px;
 }
 
 .addressInfo {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 20px;
     position: relative;
     padding-left: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #686868;
 }
 .addressInfo::before {
     content: '';
     position: absolute;
-    left: 1px; 
+    left: 0; 
     width: 20px;
     height: 20px;
     background-image: url('../../assets/mapIcon.png');
@@ -303,18 +321,19 @@ main {
 
 .emailInfo {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 20px;
     position: relative;
     padding-left: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #686868;
 }
 
 .emailInfo::before {
     content: '';
     position: absolute;
-    left: 1px; 
+    left: 0; 
     width: 20px;
     height: 20px;
     background-image: url('../../assets/mailIcon.png');
@@ -322,23 +341,107 @@ main {
     background-repeat: no-repeat;
 }
 
-.rightSideImage {
-
+.rightSideImage > img {
+    width: 675px;
+    height: auto;
 }
 
 
 
-
-/* .consultaButton::before{
-    content: '';
-    position: absolute;
-    left: 25px; 
-    width: 20px;
-    height: 20px;
-    background-image: url('../../assets/whatsapplogo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+@media (max-width: 1560px) {
+    /* .imgContainer{
+        width: 488px;
+        height: auto;
+    } */
+    .firstSection {
+        gap: 0;
+    }
 }
 
-import mapIcon from '../../assets/mapIcon.png';
-import mailIcon from '../../assets/mailIcon.png'; */
+
+
+@media (max-width: 915px) {
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px; /* Adjust padding for mobile */
+    }
+
+    .boasTextContent {
+        max-width: 100%; /* Allow text to take full width */
+        align-items: center; /* Center align for mobile */
+        text-align: center; /* Center text for better readability */
+        margin-top: 75px;
+    }
+
+    .imgContainer {
+        max-width: 100%; /* Allow image to take full width */
+        margin: 20px 0; /* Add spacing around the image */
+    }
+
+    .imgContainer img {
+        width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .columnContainer {
+        flex-direction: column; /* Stack columns vertically */
+        width: 100%; /* Full width on mobile */
+        border: none; /* Remove borders for mobile */
+        gap: 20px; /* Spacing between items */
+    }
+
+    .columns {
+        min-width: 100%; /* Ensure columns take full width */
+        text-align: center; /* Center text */
+    }
+
+    .servicosContainer {
+        padding: 100px 20px; /* Adjust padding for mobile */
+    }
+
+    .titleComo {
+        font-size: 2rem; /* Smaller title size */
+    }
+
+    .rowsContent {
+        flex-direction: column; /* Stack rows vertically */
+        gap: 30px; /* Spacing between items */
+    }
+
+    .row {
+        padding: 15px; /* Reduce padding */
+        width: 100%; /* Ensure full width */
+    }
+
+    .sobreNosContainer {
+        flex-direction: column; /* Stack content vertically */
+        gap: 50px; /* Spacing between elements */
+        padding: 100px 20px; /* Adjust padding */
+    }
+
+    .doctorImageContainer img {
+        width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .contatoContainer {
+        flex-direction: column; /* Stack contact elements */
+        gap: 50px; /* Spacing between elements */
+        padding: 50px 20px; /* Adjust padding */
+    }
+
+    .rightSideImage img {
+        width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .addressInfo,
+    .emailInfo {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+
+    .entreEmContato {
+        font-size: 32px; /* Smaller title size */
+    }
+}
