@@ -1,103 +1,84 @@
-:root {
-    --brand-green: #00856F;
-    --brand-green-light: #DCE9E2;
-    --brand-green-light-02: #F7F9F9;
-    --brand-beige: #FFFAF1;
-    --brand-green-hover: #00453A;
- 
-    --gray-headline: #061800;
-    --gray-paragraph: #384633;
-    --white: #3E3E3E;
- }
-
- * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-
 .title {
-    margin: 0;
-    width: 10rem;
+  margin: 0;
+  width: 10rem;
+}
+footer {
+  background-color: var(--brand-green);
 }
 
 .footerContainer {
-    background-color: #00856F;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 120px;
+  max-width: 1450px;
+  margin-inline: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 10px;
 }
 
 .leftFooterInfoContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 20px;
-    padding-left: 67px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 67px;
 }
 
 .leftFooterInfoContainer > img {
-    width: 18rem;
+  width: 18rem;
 }
 
 .doctorYear {
-    color: #FFFAF1;
-    font-size: 1.1rem;
+  color: #fffaf1;
+  font-size: 1.1rem;
 }
 
 .todosPara {
-    color: #FFFAF1;
-    font-size: 1.1rem;
+  color: #fffaf1;
+  font-size: 1.1rem;
 }
 
 .logoLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding-right: 46px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-right: 46px;
 }
 
-.logoLinks > a > img{
-    width: 30px;
-    height: auto;
+.logoLinks > a > img {
+  width: 30px;
+  height: auto;
 }
-
 
 @media (max-width: 915px) {
-    .footerContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 50px;
-        padding: 100px 37px;
-    }
-    .leftFooterInfoContainer {
-        padding: 0;
-    }
-    .leftFooterInfoContainer > img {
-        width: 27rem;
-    }
-    .doctorYear {
-        font-size: 32px;
-    }
-    .todosPara {
-        font-size: 32px;
-    }
-    .logoLinks > a > img {
-        width: 50px;
-    }
-    .logoLinks {
-        gap: 64px;
-    }
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 100px 37px;
+  }
+  .leftFooterInfoContainer {
+    padding: 0;
+  }
+  .leftFooterInfoContainer > img {
+    width: 27rem;
+  }
+  .doctorYear {
+    font-size: 32px;
+  }
+  .todosPara {
+    font-size: 32px;
+  }
+  .logoLinks > a > img {
+    width: 50px;
+  }
+  .logoLinks {
+    gap: 64px;
+  }
 }

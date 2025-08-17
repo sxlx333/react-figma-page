@@ -1,607 +1,609 @@
-:root {
-    --brand-green: #00856F;
-    --brand-green-light: #DCE9E2;
-    --brand-green-light-02: #F7F9F9;
-    --brand-beige: #FFFAF1;
-    --brand-green-hover: #00453A;
-
-    --gray-headline: #061800;
-    --gray-paragraph: #384633;
-    --white: #3E3E3E;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-
 main {
-    position: relative; /* This ensures the absolute positioning of children stays within this context */
-    margin-top: 30px;
-    width: 100vw;
-    padding: 0;
+  position: relative;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.firstSectionContainer {
+  background-color: var(--brand-green-light);
+  position: relative;
 }
 
 .firstSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #DCE9E2;
-    padding: 20px;
-    position: relative;
-    padding-bottom: 45px;
-    gap: 40px;
-    margin-top: -7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  width: auto;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px 10px 50px 10px;
+  gap: 40px;
+  margin-top: -7px;
 }
 
-/* Styling for the text content */
 .boasTextContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 50%;
-    gap: 21px;
-    margin-bottom: 87px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 50%;
+  gap: 30px;
+  margin-bottom: 87px;
 }
-
 
 .imgContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 50%;
-    /* margin-right: 159px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
 }
 
 .imgContainer img {
-    /* max-width: 100%; 
-    height: auto; */
-    width: 550px;
-    height: auto;
+  width: 550px;
+  height: auto;
 }
 
 .miniText {
-    color: #00856F;
-    font-size: 18px;
-    font-weight: 500;
+  color: #00856f;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.assistenciaTitle{
-    color: #212529;
-    font-size: 60px;
-    line-height: 5rem;
-    margin: 0;
+.assistenciaTitle {
+  color: #212529;
+  font-size: 66px;
+  line-height: 5rem;
+  margin: 0;
 }
 
-.paragraphText{
-    color: #495057;
-    font-size: 21px;
-    margin: 0;
+.paragraphText {
+  color: #495057;
+  font-size: 24px;
+  margin: 0;
 }
 
-.consultaButton{
-    background-color: #00856F;
-    color: #fff;
-    padding: 20px 55px;
-    border-radius: 40px;
-    border: 1px solid  #00856F;
-    font-size: 1.3rem;
-    cursor: pointer;
-    padding-left: 64px;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
+.consultaButton {
+  background-color: #00856f;
+  color: #fff;
+  padding: 20px 55px;
+  border-radius: 40px;
+  border: 1px solid #00856f;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding-left: 64px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
 }
-.consultaButton:hover{
-    background-color: #015346;
-    color: #fff;
-    border: 1px solid  #00856F;
+.consultaButton:hover {
+  background-color: #015346;
+  color: #fff;
+  border: 1px solid #00856f;
 }
-.consultaButton::before{
-    content: '';
-    position: absolute;
-    left: 25px; /* Adjust the position to fit your design */
-    width: 20px;
-    height: 20px;
-    background-image: url('../../assets/whatsapplogo.png'); /* Link to the image */
-    background-size: contain;
-    background-repeat: no-repeat;
+.consultaButton::before {
+  content: '';
+  position: absolute;
+  left: 25px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../../assets/whatsapplogo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-
 
 /*******************COLUMN CONTAINER********************/
 
 .columnContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFAF1;
-    width: 78%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: calc(100% - 56rem);
-    border: 1px solid #DCE9E2;
-    height: 260px;
-    gap: 0;
-    z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffaf1;
+  width: 78%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% - 56rem);
+  border: 1px solid #dce9e2;
+  height: 260px;
+  gap: 0;
+  z-index: 1;
+  padding: 10px;
 }
 
-
 .columns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    min-width: 150px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-width: 150px;
 }
 
 .columnMiddle {
-    border-left: 1px solid #00856F; 
-    border-right: 1px solid #00856F; 
-    min-height: 50px; 
+  border-left: 1px solid #00856f;
+  border-right: 1px solid #00856f;
+  min-height: 50px;
 }
 
-
-.numbers{
-    margin: 0;
-    font-size: 3.5rem;
+.numbers {
+  margin: 0;
+  font-size: 3.5rem;
 }
 
-.miniDesc{
-    color: #00856F;
-    font-size: 1.3rem;
+.miniDesc {
+  color: #00856f;
+  font-size: 1.3rem;
 }
-
-
-
 
 /*******************SERVICOS CONTAINER********************/
+.servicosContainerWrapper {
+  background-color: #f7f9f9;
+  position: relative;
+}
 
 .servicosContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #F7F9F9;
-    padding: 269px 0px 181px 0px;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  width: auto;
+  margin: 0 auto;
+  padding: 269px 10px 181px 10px;
+  gap: 50px;
 }
 .paraServicos {
-    font-size: 1.1rem;
-    color: #00856F;
-    font-weight: 500;
+  font-size: 1.1rem;
+  color: #00856f;
+  font-weight: 500;
 }
 .titleComo {
-    text-align: center;
-    font-size: 3.1rem;
-    font-weight: 600;
-    margin: 0px 0px 100px 0px;
+  text-align: center;
+  font-size: 3.1rem;
+  font-weight: 600;
 }
 .columnAndRowsContainer {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
 }
 
 .rowsContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  width: 100%;
 }
 .row {
-    background-color: #FFFFFF;
-    border: 1px solid #DCE9E2;
-    padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #dce9e2;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 .row > img {
-    border-style: none;
-    width: 31px;
-    height: auto;
+  border-style: none;
+  width: 31px;
+  height: auto;
 }
 
-.titleForSixColumns { 
-    font-size: 1.8rem;
-    color: #212529;
+.titleForSixColumns {
+  font-size: 1.8rem;
+  color: #212529;
 }
 
 .paragraphForSixColumns {
-    font-size: 20px;
-    color: #495057;
+  font-size: 20px;
+  color: #495057;
 }
 
-
 /*******************SOBRE NOS ESTENDA CONTAINER********************/
-
+.sobreNosWrapper {
+  background-color: #fffaf1;
+  position: relative;
+}
 .sobreNosContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    gap: 100px;
-    background-color: #FFFAF1;
-    padding: 150px 0px 150px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 50px;
+  max-width: 1400px;
+  width: 100%;
+  padding: 150px 10px;
+}
+
+.doctorImageContainer {
+  flex: 0 0 calc(45% - 25px);
 }
 
 .doctorImageContainer > img {
-    border-style: none;
-    width: 562px;
-    height: auto;
+  width: 100%;
+  height: auto;
+  display: block;
 }
-
 .rightSideContent {
-
+  flex: 0 0 calc(55% - 25px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .sobreNosPara {
-    color: #00856F;
-    font-size: 1.1rem;
-    font-weight: 500;
+  color: #00856f;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .estendaTitle {
-    font-size: 44px;
+  font-size: 44px;
 }
 
 .longTextAmet {
-    font-size: 1.1rem;
-    color: #616161;
-    line-height: 30px;
+  font-size: 1.1rem;
+  color: #616161;
+  line-height: 30px;
 }
 
 /*******************CONTATO CONTAINER********************/
-
+.contatoContainerWrapper {
+  position: relative;
+  background-color: #ffffff;
+}
 .contatoContainer {
-    background-color: #FFFFFF;
-    padding: 150px 0px 150px 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 262px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 150px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 262px;
 }
 
 .contactContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
 }
 
 .entreEmContato {
-    font-size: 51px;
-    font-weight: 500;
-    padding-bottom: 50px;
+  font-size: 51px;
+  font-weight: 600;
+  padding-bottom: 50px;
 }
 
 .leftSideButtonNearPhoneImage {
-    margin-top: 47px;
+  margin-top: 47px;
 }
 
 .addressInfo {
-    margin: 0;
-    font-size: 20px;
-    position: relative;
-    padding-left: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #686868;
+  margin: 0;
+  font-size: 20px;
+  position: relative;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #686868;
 }
 .addressInfo::before {
-    content: '';
-    position: absolute;
-    left: 0; 
-    width: 20px;
-    height: 20px;
-    background-image: url('../../assets/mapIcon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url('../../assets/mapIcon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .emailInfo {
-    margin: 0;
-    font-size: 20px;
-    position: relative;
-    padding-left: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #686868;
+  margin: 0;
+  font-size: 20px;
+  position: relative;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #686868;
 }
 
 .emailInfo::before {
-    content: '';
-    position: absolute;
-    left: 0; 
-    width: 20px;
-    height: 20px;
-    background-image: url('../../assets/mailIcon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url('../../assets/mailIcon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .rightSideImage > img {
-    width: 675px;
-    height: auto;
+  width: 675px;
+  height: auto;
 }
 
-
-
 @media (max-width: 1560px) {
-    .firstSection {
-        gap: 0;
-        margin-top: 34px;
-    }
-    .boasTextContent {
-        max-width: 34%;
-        margin-bottom: 0;
-        padding-bottom: 154px;
-        margin-top: 74px;
-    }
-    .assistenciaTitle {
-        font-size: 27px;
-        line-height: 3rem;
-    }
-    .miniText {
-        font-size: 18px;
-    }
-    .paragraphText {
-        font-size: 18px;
-    }
-    .consultaButton {
-        padding: 17px 35px;
-        font-size: 1.3rem;
-        padding-left: 64px;
-    }
-    .columnContainer {
-        width: 79%;
-        bottom: calc(100% - 49rem);
-    }
+  .firstSection {
+    gap: 0;
+    margin-top: 34px;
+  }
+  .boasTextContent {
+    max-width: 34%;
+    margin-bottom: 0;
+    padding-bottom: 154px;
+    margin-top: 74px;
+  }
+  .assistenciaTitle {
+    font-size: 27px;
+    line-height: 3rem;
+  }
+  .miniText {
+    font-size: 18px;
+  }
+  .paragraphText {
+    font-size: 18px;
+  }
+  .consultaButton {
+    padding: 17px 35px;
+    font-size: 1.3rem;
+    padding-left: 64px;
+  }
+  .columnContainer {
+    width: 79%;
+    bottom: calc(100% - 49rem);
+  }
 }
 
 @media (max-width: 1450px) {
-    .sobreNosContainer {
-        gap: 40px;
-    }
-    .doctorImageContainer > img {
-        width: 332px;
-        height: auto;
-    }
-    .estendaTitle {
-        font-size: 33px;
-    }
-    .longTextAmet {
-        font-size: 12px;
-        color: #616161;
-        line-height: 2;
-    }
+  .sobreNosContainer {
+    gap: 40px;
+  }
+  .doctorImageContainer > img {
+    width: 332px;
+    height: auto;
+  }
+  .estendaTitle {
+    font-size: 33px;
+  }
+  .longTextAmet {
+    font-size: 12px;
+    color: #616161;
+    line-height: 2;
+  }
 
+  .titleForSixColumns {
+    font-size: 26px;
+  }
+  .paragraphForSixColumns {
+    font-size: 13px;
+  }
 
-    .titleForSixColumns {
-        font-size: 26px;
-    }
-    .paragraphForSixColumns {
-        font-size: 13px;
-    }
-
-
-    .rightSideImage > img {
-        max-width: 100%;
-        height: auto;
-    }
-    .contatoContainer {
-        gap: 50px;
-    }
-    .leftSideButtonNearPhoneImage {
-        margin-top: 20px;
-    }
-    .entreEmContato {
-        font-size: 40px;
-        padding-bottom: 20px;
-    }
-    .addressInfo {
-        font-size: 18px;
-    }
-    .emailInfo {
-        font-size: 18px;
-    }
+  .rightSideImage > img {
+    max-width: 100%;
+    height: auto;
+  }
+  .contatoContainer {
+    gap: 50px;
+  }
+  .leftSideButtonNearPhoneImage {
+    margin-top: 20px;
+  }
+  .entreEmContato {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  .addressInfo {
+    font-size: 18px;
+  }
+  .emailInfo {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1100px) {
-    .columnContainer {
-        width: 79%;
-        bottom: calc(100% - 57rem);
-}
+  .columnContainer {
+    width: 75%;
+    bottom: calc(100% - 57rem);
+  }
 }
 
 @media (max-width: 915px) {
-    main {
-        width: 100%; 
-        max-width: 1200px; 
-        margin: 0 auto; 
-    }
-    .firstSection {
-        flex-direction: column;
-        align-items: center;
-        padding: 99px 10px;
-    }
+  main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .firstSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 99px 10px;
+  }
 
-    .boasTextContent {
-        max-width: 100%;
-        align-items: center; 
-        text-align: center;
-        margin-top: 75px;
-        height: auto;
-        gap: 68px;
-    }
+  .boasTextContent {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 75px;
+    height: auto;
+    gap: 68px;
+  }
 
-    .imgContainer {
-        max-width: 100%;
-        margin: 20px 0; 
-    }
+  .imgContainer {
+    max-width: 100%;
+    margin: 20px 0;
+  }
 
-    .imgContainer img {
-        max-width: 100%; 
-        height: auto;
-        margin-top: -77px;
-    }
+  .imgContainer img {
+    max-width: 100%;
+    height: auto;
+    margin-top: -77px;
+  }
 
-    .columnContainer {
-        flex-direction: column; 
-        border: none;
-        gap: 20px; 
-        bottom: calc(100% - 126rem);
-        width: 91%;
-        height: 558px;
-        margin: 0 auto; 
-        max-width: 100%; 
-    }
-    .columns {
-        min-width: 100%; 
-        text-align: center; 
-    }
+  .columnContainer {
+    flex-direction: column;
+    border: none;
+    gap: 20px;
+    bottom: calc(100% - 126rem);
+    width: 91%;
+    height: 558px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .columns {
+    min-width: 100%;
+    text-align: center;
+  }
 
-    .servicosContainer {
-        padding: 408px 0px 190px 0px;
-    }
+  .servicosContainer {
+    padding: 408px 0px 190px 0px;
+  }
 
-    .sobreNosPara {
-        font-size: 24px;
-    }
-    .estendaTitle {
-        font-size: 53px;
-    }
-    .longTextAmet {
-        font-size: 26px;
-    }
-    .rightSideContent {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        order: 1;
-    }
+  .sobreNosPara {
+    font-size: 24px;
+  }
+  .estendaTitle {
+    font-size: 53px;
+  }
+  .longTextAmet {
+    font-size: 26px;
+  }
+  .rightSideContent {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    order: 1;
+  }
 
-    .longTextAmet > br {
-        display: none;
-    }
-    .titleComo {
-        font-size: 60px;
-    }
-    .doctorImageContainer {
-        order: 2;
-    }
+  .longTextAmet > br {
+    display: none;
+  }
+  .titleComo {
+    font-size: 60px;
+  }
+  .doctorImageContainer {
+    order: 2;
+  }
 
-    .rowsContent {
-        flex-direction: column;
-        gap: 30px; 
-    }
+  .rowsContent {
+    flex-direction: column;
+    gap: 30px;
+  }
 
-    .row {
-        padding: 40px;
-        width: max-content;
-    }
+  .row {
+    padding: 40px;
+    width: max-content;
+  }
 
-    .row > img {
-        width: 40px;
-    }
-    .titleForSixColumns {
-        font-size: 40px;
-    }
-    .paragraphForSixColumns {
-        font-size: 24px;
-        margin: 30px 0px 0px 0px;
-    }
+  .row > img {
+    width: 40px;
+  }
+  .titleForSixColumns {
+    font-size: 40px;
+  }
+  .paragraphForSixColumns {
+    font-size: 24px;
+    margin: 30px 0px 0px 0px;
+  }
 
-    .sobreNosContainer {
-        flex-direction: column;
-        gap: 95px;
-        padding: 100px 20px;
-    }
+  .sobreNosContainer {
+    flex-direction: column;
+    gap: 95px;
+    padding: 100px 20px;
+  }
 
-    .doctorImageContainer img {
-        max-width: 100%;
-        height: auto;
-        width: auto;
-    }
+  .doctorImageContainer img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
 
-    .contatoContainer {
-        flex-direction: column;
-        gap: 50px; 
-        padding: 50px 20px;
-        margin-top: 201px;
-    }
+  .contatoContainer {
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 20px;
+    margin-top: 201px;
+  }
 
-    .rightSideImage img {
-        max-width: 100%; 
-        height: auto;
-        width: auto;
-        margin-bottom: 70px;
-    }
+  .rightSideImage img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom: 70px;
+  }
 
-    .addressInfo,
-    .emailInfo {
-        font-size: 34px;
-    }
+  .addressInfo,
+  .emailInfo {
+    font-size: 34px;
+  }
 
-    .entreEmContato {
-        font-size: 68px;
-    }
-    .assistenciaTitle {
-        font-size: 62px;
-        line-height: normal;
-    }
-    .paragraphText {
-        font-size: 34px;
-    }
-    .consultaButton {
-        font-size: 40px;
-    }
-    .miniText {
-        font-size: 23px;
-    }
-    .columnMiddle {
-        border: none;
-    }
-    .paraServicos {
-        font-size: 32px;
-    }
-    .columnAndRowsContainer {
-        width: 100%;
-        gap: 37px;
-    }
+  .entreEmContato {
+    font-size: 68px;
+  }
+  .assistenciaTitle {
+    font-size: 62px;
+    line-height: normal;
+  }
+  .paragraphText {
+    font-size: 34px;
+  }
+  .consultaButton {
+    font-size: 40px;
+  }
+  .miniText {
+    font-size: 23px;
+  }
+  .columnMiddle {
+    border: none;
+  }
+  .paraServicos {
+    font-size: 32px;
+  }
+  .columnAndRowsContainer {
+    width: 100%;
+    gap: 37px;
+  }
 }
 @media (max-width: 700px) {
-    .columnContainer {
-        bottom: calc(100% - 126rem);
-        width: 91%;
-        height: 558px;
-    }
- }
- @media (max-width: 660px) {
-    .columnContainer {
-        bottom: calc(100% - 126rem);
-        width: 91%;
-        height: 558px;
-    }
- }
+  .columnContainer {
+    bottom: calc(100% - 126rem);
+    width: 91%;
+    height: 558px;
+  }
+}
+@media (max-width: 660px) {
+  .columnContainer {
+    bottom: calc(100% - 126rem);
+    width: 91%;
+    height: 558px;
+  }
+}
+@media (max-width: 992px) {
+  .sobreNosContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
 
+  .doctorImageContainer,
+  .rightSideContent {
+    flex: 0 0 100%;
+  }
+
+  .estendaTitle {
+    font-size: 32px;
+  }
+}
